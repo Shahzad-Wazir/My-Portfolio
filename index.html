@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shahzad portfolio</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Font Awesome CDN for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- Google Fonts: Roboto -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- AOS Library for animations (Optional) -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Style switcher -->
+    <link rel="stylesheet" href="css/skins/color-1.css" class="alternate-style" title="color-1" disabled>
+    <link rel="stylesheet" href="css/skins/color-2.css" class="alternate-style" title="color-2" disabled>
+    <link rel="stylesheet" href="css/skins/color-3.css" class="alternate-style" title="color-3" disabled>
+    <link rel="stylesheet" href="css/skins/color-4.css" class="alternate-style" title="color-4" disabled>
+    <link rel="stylesheet" href="css/skins/color-5.css" class="alternate-style" title="color-5" disabled>
+    <link rel="stylesheet" href="css/skins/color-6.css" class="alternate-style" title="color-6" disabled>
+    <link rel="stylesheet" href="css/skins/color-7.css" class="alternate-style" title="color-7" disabled>
+    <link rel="stylesheet" href="css/skins/color-8.css" class="alternate-style" title="color-8" disabled>
+    <link rel="stylesheet" href="css/style-switcher.css">
+</head>
+<body>
+    <!-- Loader -->
+    <div id="loader" class="loader">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- Hamburger Menu Button -->
+    <div class="hamburger-menu">
+        <i class="fas fa-bars"></i>
+    </div>
+
+    <nav class="sidebar">
+        <div class="logo">
+            <h1>Portfolio</h1>
+        </div>
+        <ul>
+            <li><a href="#hero" class="nav-link"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="#about" class="nav-link"><i class="fas fa-user"></i> About</a></li>
+            <li><a href="#skills" class="nav-link"><i class="fas fa-tools"></i> Skills</a></li>
+            <li><a href="#services" class="nav-link"><i class="fas fa-briefcase"></i> Services</a></li>
+            <li><a href="#projects" class="nav-link"><i class="fas fa-project-diagram"></i> Projects</a></li>
+            <li><a href="#education" class="nav-link"><i class="fas fa-graduation-cap"></i> Education</a></li>
+            <li><a href="#contact" class="nav-link"><i class="fas fa-envelope"></i> Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="hero">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Hello, my name is <span>Shahzad Wazir</span></h1>
+                    <h2>I am a B.Tech CSE Student</h2>
+                    <p>Aspiring Software Developer with a strong foundation in C++, Python, and JavaScript. Skilled in creating responsive web applications. Eager to leverage my technical skills to contribute to innovative projects.</p>
+                    <div class="button-group">
+                        <button class="hire-btn" onclick="scrollToSection('#contact')">Hire Me</button>
+                        <a href="cv/resume (1).pdf" download class="download-btn">Download CV</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="photo-container">
+                        <img src="image/hero.jpg" alt="Shahzad Wazir" class="profile-pic">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Hello! I’m Shahzad, a 2nd-year Computer Science & Engineering (B.Tech) student with a passion for coding, problem-solving, and creating innovative tech solutions. I enjoy diving into challenges, whether it’s competitive programming, web development, or building new projects. Always eager to learn and grow, I love turning ideas into reality with technology!</p>
+        </section>
+
+        <section id="skills">
+            <h2>Skills</h2>
+            <ul class="skills-list">
+                <li>C++</li>
+                <li>Python</li>
+                <li>JavaScript</li>
+                <li>HTML & CSS</li>
+                <li>React.js</li>
+                <li>Git & GitHub</li>
+                <li>Data Structures</li>
+                <li>Algorithms</li>
+            </ul>
+            <h3 class="sub-heading">Certifications</h3>
+            <ul class="cert-list">
+                <!-- <li data-cert-url="https://via.placeholder.com/300x200" class="cert-item">AI for Entrepreneurship</li> -->
+                <img src="image/AI-for-Entrepreneurship.jpg" alt="AI-for-Entrepreneurship" class="project-screenshot">
+                <img src="image/certificate_page-0001.jpg" alt="Python Certificate" class="project-screenshot">
+                <!-- <li data-cert-url="https://via.placeholder.com/300x200" class="cert-item">Python for Data Science</li> -->
+                <!-- <li data-cert-url="https://via.placeholder.com/300x200" class="cert-item">Web Development Bootcamp - Udemy, 2023</li> -->
+            </ul>
+            <div id="cert-popup" class="cert-popup">
+                <span id="close-popup">×</span>
+                <img id="cert-image" src="" alt="Certificate">
+            </div>
+        </section>
+
+        <section id="services">
+            <h2>Services</h2>
+            <div class="services-list">
+                <div class="service-item">
+                    <div class="service-item-inner">
+                        <div class="icon">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <h4>Web Development</h4>
+                        <p>I create responsive and user-friendly websites using HTML, CSS, JavaScript, and React.js. From portfolios to dynamic web apps, I focus on clean design and smooth functionality.</p>
+                    </div>
+                </div>
+                <div class="service-item">
+                    <div class="service-item-inner">
+                        <div class="icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h4>Python Programming</h4>
+                        <p>I offer Python programming services, including scripting, automation, and small-scale applications. I can help with coding assignments and problem-solving.</p>
+                    </div>
+                </div>
+                <div class="service-item">
+                    <div class="service-item-inner">
+                        <div class="icon">
+                            <i class="fas fa-project-diagram"></i>
+                        </div>
+                        <h4>Project Assistance</h4>
+                        <p>I assist with technical projects, including web apps, games, and algorithms. I can help with planning, coding, and debugging to bring your ideas to life.</p>
+                    </div>
+                </div>
+                <div class="service-item">
+                    <div class="service-item-inner">
+                        <div class="icon">
+                            <i class="fas fa-book"></i>
+                        </div>
+                        <h4>Competitive Programming</h4>
+                        <p>I provide guidance in competitive programming, helping with problem-solving, data structures, and algorithms in C++ and Python.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="project">
+                <h3>Quiz App</h3>
+                <img src="https://via.placeholder.com/300x200" alt="Quiz App Screenshot" class="project-screenshot">
+                <p>Built a dynamic quiz application using React.js and JavaScript.</p>
+                <div class="project-links">
+                    <a href="https://github.com/Shahzad-Wazir" class="project-link">View on GitHub</a>
+                    <a href="https://example.com/quiz-app" class="project-link live-demo">Live Demo</a>
+                </div>
+            </div>
+            <div class="project">
+                <h3>Hospital Management</h3>
+                <img src="https://via.placeholder.com/300x200" alt="Hospital Management Screenshot" class="project-screenshot">
+                <p>A simple static website generator using Python and MySQL.</p>
+                <div class="project-links">
+                    <a href="https://github.com/Shahzad-Wazir" class="project-link">View on GitHub</a>
+                    <a href="https://example.com/portfolio-generator" class="project-link live-demo">Live Demo</a>
+                </div>
+            </div>
+            <div class="project">
+                <h3>3*3 matrix trace game</h3>
+                <img src="https://via.placeholder.com/300x200" alt="3*3 matrix trace game Screenshot" class="project-screenshot">
+                <p>Developed an unbeatable 3*3 matrix trace game using React js and CSS.In which we trace the motion of click of the block.</p>
+                <div class="project-links">
+                    <a href="https://github.com/Shahzad-Wazir" class="project-link">View on GitHub</a>
+                    <a href="https://example.com/tic-tac-toe" class="project-link live-demo">Live Demo</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="education">
+            <h2>Education</h2>
+            <div class="edu-item">
+                <h3>B.Tech in Computer Science & Engineering</h3>
+                <p>RCC Institute of Information Technology</p>
+                <p>2023 - 2027</p>
+                <p>SGPA: 7.67/10</p>
+            </div>
+            <div class="edu-item">
+                <h3>Class XII (CBSE)</h3>
+                <p>L. A. Garden High School</p>
+                <p>Year : 2023</p>
+                <p>Percentage: 78.2%</p>
+            </div>
+            <div class="edu-item">
+                <h3>Class X (CBSE)</h3>
+                <p>Gobind Ram Kataruka School</p>
+                <p>Year : 2021</p>
+                <p>Percentage: 70.6%</p>
+            </div>
+            <div class="edu-item">
+                <h3>Competitive Exam (Like Jee mains)</h3>
+                <p>Year : 2023</p>
+                <p>Percentile : 88%ile</p>
+                <p>AIR : 132182</p>
+
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Phone No: +91 7667831468</p>
+            <p>Email: <a href="mailto:shahzadwazir0123@gmail.com">shahzadwazir0123@gmail.com</a></p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/shahzad-wazir-553a43344/">linkedin.com/in/shahzad-wazir-553a43344</a></p>
+            <p>GitHub: <a href="https://github.com/Shahzad-Wazir">github.com/Shahzad-Wazir</a></p>
+            <!-- <h3 class="sub-heading">Send a Message</h3>
+            <form id="contact-form" class="contact-form">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form> -->
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Shahzad Wazir.</p>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/shahzad-wazir-553a43344/" class="social-link" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/Shahzad-Wazir" class="social-link" target="_blank"><i class="fab fa-github"></i></a>
+            <!-- <a href="https://twitter.com/shahzadwazir" class="social-link" target="_blank"><i class="fab fa-twitter"></i></a> -->
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" title="Back to Top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Style switcher -->
+    <div class="style-switcher">
+        <div class="style-switcher-toggler s-icon">
+            <i class="fas fa-cog fa-spin"></i>
+        </div>
+        <div class="day-night s-icon">
+            <i class="fas fa-moon"></i>
+        </div>
+        <h4>Theme Colors</h4>
+        <div class="colors">
+            <span class="color-1" onclick="setActiveStyle('color-1')"></span>
+            <span class="color-2" onclick="setActiveStyle('color-2')"></span>
+            <span class="color-3" onclick="setActiveStyle('color-3')"></span>
+            <span class="color-4" onclick="setActiveStyle('color-4')"></span>
+            <span class="color-5" onclick="setActiveStyle('color-5')"></span>
+            <span class="color-6" onclick="setActiveStyle('color-6')"></span>
+            <span class="color-7" onclick="setActiveStyle('color-7')"></span>
+            <span class="color-8" onclick="setActiveStyle('color-8')"></span>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+    <script src="js/style-switcher.js"></script>
+    <!-- AOS Library -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</body>
+</html>
